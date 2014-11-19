@@ -33,7 +33,7 @@ cacheSolve <- function(x, ...) {
     return(m)
   }
   data <- x$get()
-  ## If the internal variable 'm' is null, then its inverse is calculated
+  ## If the internal variable 'm' is null then its inverse is calculated
   m <- solve(data, ...)
   
   x$setsolve(m)
